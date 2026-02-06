@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "1 1 1 1 1 1 1 1",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "chacha_kernel.cpp",
+    "fileloc": 14,
+    "instructions": 53,
+    "memory_accesses": 8,
+    "name": "chacha20_kernel",
+    "total_instructions": 5469
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "chacha_kernel.cpp",
+    "fileloc": 6,
+    "instructions": 121,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "qr",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 677
+  }
+}

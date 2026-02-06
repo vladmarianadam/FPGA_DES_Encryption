@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=chacha20_kernel",
+      "-c",
+      "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha_kernel.cpp"
+    ],
+    "file": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha_kernel.cpp"
+  },
+  {
+    "directory": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20",
+    "arguments": [
+      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-c",
+      "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\test_chacha.cpp"
+    ],
+    "file": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\test_chacha.cpp"
+  }
+]

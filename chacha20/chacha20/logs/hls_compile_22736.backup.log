@@ -1,0 +1,121 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=chacha_kernel.cpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha_kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=test_chacha.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/test_chacha.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=chacha20_kernel' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tcsg324-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(8)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 2 seconds. Elapsed time: 6.33 seconds; current allocated memory: 163.188 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'chacha_kernel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.122 seconds; current allocated memory: 165.633 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 5,469 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 405 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 231 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 232 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 232 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 263 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 263 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 247 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 311 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 316 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/RazvanBanateanu/Desktop/2026/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'qr(ap_uint<32>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>&)' into 'chacha20_kernel(ap_uint<32>*)' (chacha_kernel.cpp:22:9)
+INFO: [HLS 214-248] Applying array_partition to 'state': Complete partitioning on dimension 1. (chacha_kernel.cpp:15:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 11.477 seconds; current allocated memory: 167.359 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 167.359 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 173.395 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 176.320 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 199.352 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.197 seconds; current allocated memory: 199.430 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chacha20_kernel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chacha20_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_20_1'.
+WARNING: [HLS 200-880] The II Violation in module 'chacha20_kernel' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'xor' operation 32 bit ('xor_ln11_5', chacha_kernel.cpp:11->chacha_kernel.cpp:27) and 'add' operation 32 bit ('add_ln10_3', chacha_kernel.cpp:10->chacha_kernel.cpp:25).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'chacha20_kernel' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'xor' operation 32 bit ('xor_ln11_5', chacha_kernel.cpp:11->chacha_kernel.cpp:27) and 'add' operation 32 bit ('add_ln10_3', chacha_kernel.cpp:10->chacha_kernel.cpp:25).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'chacha20_kernel' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'add' operation 32 bit ('add_ln12_5', chacha_kernel.cpp:12->chacha_kernel.cpp:27) and 'xor' operation 32 bit ('xor_ln10_3', chacha_kernel.cpp:10->chacha_kernel.cpp:25).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'chacha20_kernel' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'xor' operation 32 bit ('xor_ln11_6', chacha_kernel.cpp:11->chacha_kernel.cpp:28) and 'add' operation 32 bit ('add_ln9_3', chacha_kernel.cpp:9->chacha_kernel.cpp:25).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'chacha20_kernel' (loop 'VITIS_LOOP_20_1'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between 'xor' operation 32 bit ('xor_ln12_6', chacha_kernel.cpp:12->chacha_kernel.cpp:28) and 'add' operation 32 bit ('add_ln10_3', chacha_kernel.cpp:10->chacha_kernel.cpp:25).
+Resolution: For help on HLS 200-880 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 6, Depth = 6, loop 'VITIS_LOOP_20_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 15.121 seconds; current allocated memory: 204.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.251 seconds; current allocated memory: 205.289 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chacha20_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_0' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_3' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_4' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_5' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_6' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_7' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_8' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_9' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_10' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_11' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_12' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_13' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_14' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/gmem_15' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_0' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_4' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_5' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_6' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_7' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_8' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_9' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_10' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_11' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_12' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_13' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_14' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_15' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'chacha20_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'state_0', 'state_1', 'state_2', 'state_3', 'state_4', 'state_5', 'state_6', 'state_7', 'state_8', 'state_9', 'state_10', 'state_11', 'state_12', 'state_13', 'state_14', 'state_15' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chacha20_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.391 seconds; current allocated memory: 213.582 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.384 seconds; current allocated memory: 224.223 MB.
+ERROR: [HLS 200-2014] Failed to generated HBM driver object file hbm_helper_aarch64.o
+ERROR: Problem generating csynth RTL: Failed to generate HBM driver object file hbm_helper_aarch64.o
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 5 seconds. Total elapsed time: 49.225 seconds; peak allocated memory: 240.199 MB.

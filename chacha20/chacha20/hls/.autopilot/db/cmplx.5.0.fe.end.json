@@ -1,0 +1,14 @@
+{
+    "0": {
+        "name": "chacha20_kernel",
+        "file": "chacha_kernel.cpp",
+        "fileloc": "14",
+        "instructions": "1683",
+        "total_instructions": "1683",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "321"
+    }
+}

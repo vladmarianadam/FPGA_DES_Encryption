@@ -1,0 +1,15 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="chacha_kernel.cpp" line="7" pragmaType="inline" parentfunction="qr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::arg1 operator<<<32, false>(ap_int_base<32, false> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::RType<32, false>::logic operator|<32, false, 32, false>(ap_int_base<32, false> const&, ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="530" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int(unsigned int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="chacha_kernel.cpp" line="23" pragmaType="unroll" parentfunction="chacha20_kernel" factor="-1" skip_exit_check="0"/>
+<pragma file="chacha_kernel.cpp" line="16" pragmaType="interface" parentfunction="chacha20_kernel" mode="s_axilite" port="state" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="chacha_kernel.cpp" line="17" pragmaType="interface" parentfunction="chacha20_kernel" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="chacha_kernel.cpp" line="20" pragmaType="array_partition" parentfunction="chacha20_kernel" dim="1" factor="0" mode="complete" dynamic="0" variable="state"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator^=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, false>& ap_int_base<32, false>::operator+=<32, false>(ap_int_base<32, false> const&)" off="0" region="0" recursive="0"/>
+</pragmas>

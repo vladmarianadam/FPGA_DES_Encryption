@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha20\\chacha20.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/04/26 17:49:28",
+ "timestampMillis": "1770220168323",
+ "buildStep": {
+  "cmdId": "6e0bb7c3-439e-487a-aad2-2ff29a3908ca",
+  "name": "vitis-run",
+  "logFile": "C:/02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha20\\logs\\chacha20.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\hls_config.cfg --work_dir chacha20 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\hls_config.cfg",
+   "--work_dir",
+   "chacha20"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 17:49:28",
+ "timestampMillis": "1770220168323",
+ "status": {
+  "cmdId": "6e0bb7c3-439e-487a-aad2-2ff29a3908ca",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/04/26 17:49:35",
+ "timestampMillis": "1770220175446",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "chacha20_kernel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha_kernel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/04/26 17:49:35",
+ "timestampMillis": "1770220175447",
+ "buildStep": {
+  "cmdId": "3dc1a5f2-9e05-4695-9fec-bbfbb273e1f2",
+  "name": "",
+  "logFile": "C:/02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20\\chacha20\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\FPGA_Raz\\FPGA\\chacha20"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 17:49:35",
+ "timestampMillis": "1770220175448",
+ "status": {
+  "cmdId": "3dc1a5f2-9e05-4695-9fec-bbfbb273e1f2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 17:49:41",
+ "timestampMillis": "1770220181093",
+ "status": {
+  "cmdId": "3dc1a5f2-9e05-4695-9fec-bbfbb273e1f2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/04/26 17:49:41",
+ "timestampMillis": "1770220181183",
+ "status": {
+  "cmdId": "6e0bb7c3-439e-487a-aad2-2ff29a3908ca",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/04/26 17:49:41",
+ "timestampMillis": "1770220181184",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/04/26 17:49:41",
+ "timestampMillis": "1770220181185",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,59 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: chacha_kernel.cpp, Line: 25, Column: 9 }
+Function:        _Z15chacha20_kernelP7ap_uintILi32EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'qr(ap_uint<32>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>&)'
+    DebugLoc:        { File: chacha_kernel.cpp, Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'chacha20_kernel(ap_uint<32>*)'
+    DebugLoc:        { File: chacha_kernel.cpp, Line: 14, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: chacha_kernel.cpp, Line: 14, Column: 0 }
+Function:        _Z15chacha20_kernelP7ap_uintILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_22_1
+  - String:          ''' ('
+  - LoopLoc:         'chacha_kernel.cpp:22:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          chacha20_kernel
+  - String:          ''' completely with a factor of '
+  - Factor:          '10'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_chacha20_kernel_ir
+Args:            
+  - Callee:          'chacha20_kernel(ap_uint<32>*)'
+    DebugLoc:        { File: chacha_kernel.cpp, Line: 14, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_chacha20_kernel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: chacha_kernel.cpp, Line: 14, Column: 0 }
+Function:        _Z15chacha20_kernelP7ap_uintILi32EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          state
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

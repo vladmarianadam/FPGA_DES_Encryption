@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../test_chacha.cpp in debug mode
+   Compiling ../../../../chacha_kernel.cpp in debug mode
+   Generating csim.exe
+--- Incepe Simularea ---
+State[0] = 0x48e90081
+State[1] = 0xf390518c
+State[2] = 0x224b1422
+State[3] = 0x0e74bdb7
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

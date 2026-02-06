@@ -1,0 +1,150 @@
+01/05/26 18:06:57: Running xcd server. This server was built by gradle.
+01/05/26 18:06:57: Server was asked to start on port: '61478'
+01/05/26 18:06:57: Server is using token UUID: 'f828fe5c-3abd-4a4b-890b-b8834d077a60'
+01/05/26 18:06:57: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/05/26 18:06:57: Attempting to start server on port '61478'
+01/05/26 18:06:57: Running Dispatch Server
+01/05/26 18:06:57: Version 2.2.0
+01/05/26 18:06:59: Dispatch Server: Accepted socket connection from client
+01/05/26 18:06:59: Starting Socket connection
+01/05/26 18:06:59: EXCHANGE_TOKEN received, server token: f828fe5c-3abd-4a4b-890b-b8834d077a60, passed token: f828fe5c-3abd-4a4b-890b-b8834d077a60
+01/05/26 18:06:59: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+01/05/26 18:06:59: SESSION_MGR: creating session with session uuid: '9044c1c5-f871-4d4a-962c-9e457e4b41e2' and name 'vitis-run_compile_chacha20'
+01/05/26 18:06:59: KERNEL_SVC: creating session with uuid: '9044c1c5-f871-4d4a-962c-9e457e4b41e2' and name 'vitis-run_compile_chacha20'
+01/05/26 18:06:59: GUIDANCE_SMGR: creating guidance session with uuid: '9044c1c5-f871-4d4a-962c-9e457e4b41e2' and name 'vitis-run_compile_chacha20'
+01/05/26 18:06:59: SYSTEM_DIAGRAM: creating session with uuid: '9044c1c5-f871-4d4a-962c-9e457e4b41e2' and name 'vitis-run_compile_chacha20'
+01/05/26 18:07:10: Dispatch Server: Accepted socket connection from client
+01/05/26 18:07:10: Starting Socket connection
+01/05/26 18:09:04: SESSION_MGR: closing session for UUID '9044c1c5-f871-4d4a-962c-9e457e4b41e2' with name 'vitis-run_compile_chacha20'
+01/05/26 18:09:04: KERNEL_SVC: closing session for UUID '9044c1c5-f871-4d4a-962c-9e457e4b41e2' with name 'vitis-run_compile_chacha20'
+01/05/26 18:09:04: GUIDANCE_SMGR: closing session for UUID '9044c1c5-f871-4d4a-962c-9e457e4b41e2' with name 'vitis-run_compile_chacha20'
+01/05/26 18:09:04: SYSTEM_DIAGRAM: closing session for UUID '9044c1c5-f871-4d4a-962c-9e457e4b41e2' with name 'vitis-run_compile_chacha20'
+01/05/26 18:09:04: STOP_SERVER received, server token: f828fe5c-3abd-4a4b-890b-b8834d077a60, passed token: f828fe5c-3abd-4a4b-890b-b8834d077a60
+01/05/26 18:09:04: Socket received request to stop server.
+01/05/26 18:09:04: Dispatch Server: do_await_stop
+01/05/26 18:09:04: SERVER: destructor for server bound to port 61478
+01/05/26 18:17:16: Running xcd server. This server was built by gradle.
+01/05/26 18:17:16: Server was asked to start on port: '54289'
+01/05/26 18:17:16: Server is using token UUID: '9223de5a-5459-47ab-a2f1-2612e51868c2'
+01/05/26 18:17:16: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/05/26 18:17:16: Attempting to start server on port '54289'
+01/05/26 18:17:16: Running Dispatch Server
+01/05/26 18:17:16: Version 2.2.0
+01/05/26 18:17:18: Dispatch Server: Accepted socket connection from client
+01/05/26 18:17:18: Starting Socket connection
+01/05/26 18:17:18: EXCHANGE_TOKEN received, server token: 9223de5a-5459-47ab-a2f1-2612e51868c2, passed token: 9223de5a-5459-47ab-a2f1-2612e51868c2
+01/05/26 18:17:18: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+01/05/26 18:17:18: SESSION_MGR: creating session with session uuid: 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' and name 'v++_compile_chacha20'
+01/05/26 18:17:18: KERNEL_SVC: creating session with uuid: 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' and name 'v++_compile_chacha20'
+01/05/26 18:17:18: GUIDANCE_SMGR: creating guidance session with uuid: 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' and name 'v++_compile_chacha20'
+01/05/26 18:17:18: SYSTEM_DIAGRAM: creating session with uuid: 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' and name 'v++_compile_chacha20'
+01/05/26 18:17:25: Dispatch Server: Accepted socket connection from client
+01/05/26 18:17:25: Starting Socket connection
+01/05/26 18:18:10: SESSION_MGR: closing session for UUID 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' with name 'v++_compile_chacha20'
+01/05/26 18:18:10: KERNEL_SVC: closing session for UUID 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' with name 'v++_compile_chacha20'
+01/05/26 18:18:10: GUIDANCE_SMGR: closing session for UUID 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' with name 'v++_compile_chacha20'
+01/05/26 18:18:10: SYSTEM_DIAGRAM: closing session for UUID 'b41d9e34-b9e3-4f3e-8cd1-36cf7736c0c3' with name 'v++_compile_chacha20'
+01/05/26 18:18:10: STOP_SERVER received, server token: 9223de5a-5459-47ab-a2f1-2612e51868c2, passed token: 9223de5a-5459-47ab-a2f1-2612e51868c2
+01/05/26 18:18:10: Socket received request to stop server.
+01/05/26 18:18:10: Dispatch Server: do_await_stop
+01/05/26 18:18:10: SERVER: destructor for server bound to port 54289
+01/05/26 18:22:47: Running xcd server. This server was built by gradle.
+01/05/26 18:22:47: Server was asked to start on port: '65093'
+01/05/26 18:22:47: Server is using token UUID: 'dd037dfc-ca8a-45c1-ab4c-431649a2185f'
+01/05/26 18:22:47: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/05/26 18:22:47: Attempting to start server on port '65093'
+01/05/26 18:22:47: Running Dispatch Server
+01/05/26 18:22:47: Version 2.2.0
+01/05/26 18:22:49: Dispatch Server: Accepted socket connection from client
+01/05/26 18:22:49: Starting Socket connection
+01/05/26 18:22:49: EXCHANGE_TOKEN received, server token: dd037dfc-ca8a-45c1-ab4c-431649a2185f, passed token: dd037dfc-ca8a-45c1-ab4c-431649a2185f
+01/05/26 18:22:50: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+01/05/26 18:22:50: SESSION_MGR: creating session with session uuid: '7a4259e2-392d-4315-bd64-0ea539efdad2' and name 'v++_compile_chacha20'
+01/05/26 18:22:50: KERNEL_SVC: creating session with uuid: '7a4259e2-392d-4315-bd64-0ea539efdad2' and name 'v++_compile_chacha20'
+01/05/26 18:22:50: GUIDANCE_SMGR: creating guidance session with uuid: '7a4259e2-392d-4315-bd64-0ea539efdad2' and name 'v++_compile_chacha20'
+01/05/26 18:22:50: SYSTEM_DIAGRAM: creating session with uuid: '7a4259e2-392d-4315-bd64-0ea539efdad2' and name 'v++_compile_chacha20'
+01/05/26 18:22:56: Dispatch Server: Accepted socket connection from client
+01/05/26 18:22:56: Starting Socket connection
+01/05/26 18:23:50: SESSION_MGR: closing session for UUID '7a4259e2-392d-4315-bd64-0ea539efdad2' with name 'v++_compile_chacha20'
+01/05/26 18:23:50: KERNEL_SVC: closing session for UUID '7a4259e2-392d-4315-bd64-0ea539efdad2' with name 'v++_compile_chacha20'
+01/05/26 18:23:50: GUIDANCE_SMGR: closing session for UUID '7a4259e2-392d-4315-bd64-0ea539efdad2' with name 'v++_compile_chacha20'
+01/05/26 18:23:50: SYSTEM_DIAGRAM: closing session for UUID '7a4259e2-392d-4315-bd64-0ea539efdad2' with name 'v++_compile_chacha20'
+01/05/26 18:23:50: STOP_SERVER received, server token: dd037dfc-ca8a-45c1-ab4c-431649a2185f, passed token: dd037dfc-ca8a-45c1-ab4c-431649a2185f
+01/05/26 18:23:50: Socket received request to stop server.
+01/05/26 18:23:50: Dispatch Server: do_await_stop
+01/05/26 18:23:50: SERVER: destructor for server bound to port 65093
+01/05/26 18:24:00: Running xcd server. This server was built by gradle.
+01/05/26 18:24:00: Server was asked to start on port: '52022'
+01/05/26 18:24:00: Server is using token UUID: '679d4724-0801-4024-8f48-8060071e2eb4'
+01/05/26 18:24:00: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+01/05/26 18:24:00: Attempting to start server on port '52022'
+01/05/26 18:24:00: Running Dispatch Server
+01/05/26 18:24:00: Version 2.2.0
+01/05/26 18:24:02: Dispatch Server: Accepted socket connection from client
+01/05/26 18:24:02: Starting Socket connection
+01/05/26 18:24:02: EXCHANGE_TOKEN received, server token: 679d4724-0801-4024-8f48-8060071e2eb4, passed token: 679d4724-0801-4024-8f48-8060071e2eb4
+01/05/26 18:24:03: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+01/05/26 18:24:03: SESSION_MGR: creating session with session uuid: '93318104-536c-4627-a72a-87108d4c6709' and name 'vitis-run_compile_chacha20'
+01/05/26 18:24:03: KERNEL_SVC: creating session with uuid: '93318104-536c-4627-a72a-87108d4c6709' and name 'vitis-run_compile_chacha20'
+01/05/26 18:24:03: GUIDANCE_SMGR: creating guidance session with uuid: '93318104-536c-4627-a72a-87108d4c6709' and name 'vitis-run_compile_chacha20'
+01/05/26 18:24:03: SYSTEM_DIAGRAM: creating session with uuid: '93318104-536c-4627-a72a-87108d4c6709' and name 'vitis-run_compile_chacha20'
+01/05/26 18:24:10: Dispatch Server: Accepted socket connection from client
+01/05/26 18:24:10: Starting Socket connection
+01/05/26 18:25:40: SESSION_MGR: closing session for UUID '93318104-536c-4627-a72a-87108d4c6709' with name 'vitis-run_compile_chacha20'
+01/05/26 18:25:40: KERNEL_SVC: closing session for UUID '93318104-536c-4627-a72a-87108d4c6709' with name 'vitis-run_compile_chacha20'
+01/05/26 18:25:40: GUIDANCE_SMGR: closing session for UUID '93318104-536c-4627-a72a-87108d4c6709' with name 'vitis-run_compile_chacha20'
+01/05/26 18:25:40: SYSTEM_DIAGRAM: closing session for UUID '93318104-536c-4627-a72a-87108d4c6709' with name 'vitis-run_compile_chacha20'
+01/05/26 18:25:40: STOP_SERVER received, server token: 679d4724-0801-4024-8f48-8060071e2eb4, passed token: 679d4724-0801-4024-8f48-8060071e2eb4
+01/05/26 18:25:40: Socket received request to stop server.
+01/05/26 18:25:40: Dispatch Server: do_await_stop
+01/05/26 18:25:40: SERVER: destructor for server bound to port 52022
+02/04/26 17:49:25: Running xcd server. This server was built by gradle.
+02/04/26 17:49:25: Server was asked to start on port: '65100'
+02/04/26 17:49:25: Server is using token UUID: 'a0344c56-75fc-467a-a5c2-0423da17fb2e'
+02/04/26 17:49:25: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/04/26 17:49:25: Attempting to start server on port '65100'
+02/04/26 17:49:25: Running Dispatch Server
+02/04/26 17:49:25: Version 2.2.0
+02/04/26 17:49:28: Dispatch Server: Accepted socket connection from client
+02/04/26 17:49:28: Starting Socket connection
+02/04/26 17:49:28: EXCHANGE_TOKEN received, server token: a0344c56-75fc-467a-a5c2-0423da17fb2e, passed token: a0344c56-75fc-467a-a5c2-0423da17fb2e
+02/04/26 17:49:28: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+02/04/26 17:49:28: SESSION_MGR: creating session with session uuid: '4a8674e2-85ab-4459-a553-abd80d530f75' and name 'vitis-run_compile_chacha20'
+02/04/26 17:49:28: KERNEL_SVC: creating session with uuid: '4a8674e2-85ab-4459-a553-abd80d530f75' and name 'vitis-run_compile_chacha20'
+02/04/26 17:49:28: GUIDANCE_SMGR: creating guidance session with uuid: '4a8674e2-85ab-4459-a553-abd80d530f75' and name 'vitis-run_compile_chacha20'
+02/04/26 17:49:28: SYSTEM_DIAGRAM: creating session with uuid: '4a8674e2-85ab-4459-a553-abd80d530f75' and name 'vitis-run_compile_chacha20'
+02/04/26 17:49:35: Dispatch Server: Accepted socket connection from client
+02/04/26 17:49:35: Starting Socket connection
+02/04/26 17:49:41: SESSION_MGR: closing session for UUID '4a8674e2-85ab-4459-a553-abd80d530f75' with name 'vitis-run_compile_chacha20'
+02/04/26 17:49:41: KERNEL_SVC: closing session for UUID '4a8674e2-85ab-4459-a553-abd80d530f75' with name 'vitis-run_compile_chacha20'
+02/04/26 17:49:41: GUIDANCE_SMGR: closing session for UUID '4a8674e2-85ab-4459-a553-abd80d530f75' with name 'vitis-run_compile_chacha20'
+02/04/26 17:49:41: SYSTEM_DIAGRAM: closing session for UUID '4a8674e2-85ab-4459-a553-abd80d530f75' with name 'vitis-run_compile_chacha20'
+02/04/26 17:49:41: STOP_SERVER received, server token: a0344c56-75fc-467a-a5c2-0423da17fb2e, passed token: a0344c56-75fc-467a-a5c2-0423da17fb2e
+02/04/26 17:49:41: Socket received request to stop server.
+02/04/26 17:49:41: Dispatch Server: do_await_stop
+02/04/26 17:49:41: SERVER: destructor for server bound to port 65100
+02/04/26 17:50:17: Running xcd server. This server was built by gradle.
+02/04/26 17:50:17: Server was asked to start on port: '64703'
+02/04/26 17:50:17: Server is using token UUID: '0fea1f42-3a4d-4311-a449-27d90b099e6a'
+02/04/26 17:50:17: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+02/04/26 17:50:17: Attempting to start server on port '64703'
+02/04/26 17:50:17: Running Dispatch Server
+02/04/26 17:50:17: Version 2.2.0
+02/04/26 17:50:20: Dispatch Server: Accepted socket connection from client
+02/04/26 17:50:20: Starting Socket connection
+02/04/26 17:50:20: EXCHANGE_TOKEN received, server token: 0fea1f42-3a4d-4311-a449-27d90b099e6a, passed token: 0fea1f42-3a4d-4311-a449-27d90b099e6a
+02/04/26 17:50:20: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+02/04/26 17:50:20: SESSION_MGR: creating session with session uuid: 'd2753b38-368c-486b-a908-3e85977c5a15' and name 'v++_compile_chacha20'
+02/04/26 17:50:20: KERNEL_SVC: creating session with uuid: 'd2753b38-368c-486b-a908-3e85977c5a15' and name 'v++_compile_chacha20'
+02/04/26 17:50:20: GUIDANCE_SMGR: creating guidance session with uuid: 'd2753b38-368c-486b-a908-3e85977c5a15' and name 'v++_compile_chacha20'
+02/04/26 17:50:20: SYSTEM_DIAGRAM: creating session with uuid: 'd2753b38-368c-486b-a908-3e85977c5a15' and name 'v++_compile_chacha20'
+02/04/26 17:50:22: Dispatch Server: Accepted socket connection from client
+02/04/26 17:50:22: Starting Socket connection
+02/04/26 17:50:47: SESSION_MGR: closing session for UUID 'd2753b38-368c-486b-a908-3e85977c5a15' with name 'v++_compile_chacha20'
+02/04/26 17:50:47: KERNEL_SVC: closing session for UUID 'd2753b38-368c-486b-a908-3e85977c5a15' with name 'v++_compile_chacha20'
+02/04/26 17:50:47: GUIDANCE_SMGR: closing session for UUID 'd2753b38-368c-486b-a908-3e85977c5a15' with name 'v++_compile_chacha20'
+02/04/26 17:50:47: SYSTEM_DIAGRAM: closing session for UUID 'd2753b38-368c-486b-a908-3e85977c5a15' with name 'v++_compile_chacha20'
+02/04/26 17:50:47: STOP_SERVER received, server token: 0fea1f42-3a4d-4311-a449-27d90b099e6a, passed token: 0fea1f42-3a4d-4311-a449-27d90b099e6a
+02/04/26 17:50:47: Socket received request to stop server.
+02/04/26 17:50:47: Dispatch Server: do_await_stop
+02/04/26 17:50:47: SERVER: destructor for server bound to port 64703

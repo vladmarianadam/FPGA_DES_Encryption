@@ -1,0 +1,29 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="chacha_kernel.cpp:7:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="chacha20_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=chacha20_kernel" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="chacha_kernel.cpp:16:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="chacha20_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=state bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="chacha_kernel.cpp:17:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="chacha20_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="chacha_kernel.cpp:20:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="chacha20_kernel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=state complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="chacha_kernel.cpp:23:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="chacha20_kernel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="chacha_kernel.cpp:25:9" msg_body="Inlining function 'qr(ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)' into 'chacha20_kernel(ap_uint&lt;32&gt;*)'">
+        <args Callee="qr(ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;, ap_uint&lt;32&gt;&amp;)" Callee-DebugLoc="File chacha_kernel.cpp Line 6 Column 0" Caller="chacha20_kernel(ap_uint&lt;32&gt;*)" Caller-DebugLoc="File chacha_kernel.cpp Line 14 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="chacha_kernel.cpp:14:0" msg_body="Unrolling loop 'VITIS_LOOP_22_1' (chacha_kernel.cpp:22:22) in function 'chacha20_kernel' completely with a factor of 10">
+        <args Factor="10" LoopLoc="chacha_kernel.cpp:22:22" LoopName="VITIS_LOOP_22_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="chacha_kernel.cpp:14:0" msg_body="Applying array_partition to 'state': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="state"/>
+    </msg>
+</xilinx:hls_fe_msgs>

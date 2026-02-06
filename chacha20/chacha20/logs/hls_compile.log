@@ -1,0 +1,100 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=chacha_kernel.cpp' from hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file 'C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha_kernel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=test_chacha.cpp' from hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/test_chacha.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=chacha20_kernel' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a100tcsg324-1' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a100t-csg324-1'
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=0' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=0' from hls_config.cfg(10)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.2 seconds; current allocated memory: 135.703 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'chacha_kernel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.42 seconds; current allocated memory: 138.281 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 5,469 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,809 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,650 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,682 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,683 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'qr(ap_uint<32>&, ap_uint<32>&, ap_uint<32>&, ap_uint<32>&)' into 'chacha20_kernel(ap_uint<32>*)' (chacha_kernel.cpp:25:9)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_22_1' (chacha_kernel.cpp:22:22) in function 'chacha20_kernel' completely with a factor of 10 (chacha_kernel.cpp:14:0)
+INFO: [HLS 214-248] Applying array_partition to 'state': Complete partitioning on dimension 1. (chacha_kernel.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.203 seconds; current allocated memory: 139.926 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 139.926 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 150.246 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 152.137 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.314 seconds; current allocated memory: 174.840 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.816 seconds; current allocated memory: 174.852 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'chacha20_kernel' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'chacha20_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.71 seconds; current allocated memory: 251.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 251.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'chacha20_kernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_1' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_2' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_3' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_4' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_5' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_6' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_7' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_8' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_9' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_10' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_11' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_12' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_13' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_14' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'chacha20_kernel/state_15' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'chacha20_kernel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'state_0', 'state_1', 'state_2', 'state_3', 'state_4', 'state_5', 'state_6', 'state_7', 'state_8', 'state_9', 'state_10', 'state_11', 'state_12', 'state_13', 'state_14', 'state_15' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'chacha20_kernel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.449 seconds; current allocated memory: 251.797 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.125 seconds; current allocated memory: 251.797 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file C:/02_work/PDC/FPGA_Raz/FPGA/chacha20/chacha20/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.853 seconds; current allocated memory: 251.797 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for chacha20_kernel.
+INFO: [VLOG 209-307] Generating Verilog RTL for chacha20_kernel.
+INFO: [HLS 200-789] **** Estimated Fmax: 156.27 MHz
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 25.7 seconds; peak allocated memory: 251.797 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 29s
