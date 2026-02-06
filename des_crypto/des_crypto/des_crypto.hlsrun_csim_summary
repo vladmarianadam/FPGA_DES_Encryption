@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\des_crypto.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/06/26 16:30:00",
+ "timestampMillis": "1770388200239",
+ "buildStep": {
+  "cmdId": "e55c6f02-890d-4d9b-aeee-61b99a27371f",
+  "name": "vitis-run",
+  "logFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\logs\\des_crypto.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\02_work\\PDC\\PDC_Project\\des_crypto\\hls_config.cfg --work_dir des_crypto ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\02_work\\PDC\\PDC_Project\\des_crypto\\hls_config.cfg",
+   "--work_dir",
+   "des_crypto"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\PDC_Project\\des_crypto"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:30:00",
+ "timestampMillis": "1770388200240",
+ "status": {
+  "cmdId": "e55c6f02-890d-4d9b-aeee-61b99a27371f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/06/26 16:30:02",
+ "timestampMillis": "1770388202664",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "des_encrypt",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/02_work\\PDC\\PDC_Project\\des.cpp",
+     "C:/02_work\\PDC\\PDC_Project\\des.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/06/26 16:30:02",
+ "timestampMillis": "1770388202665",
+ "buildStep": {
+  "cmdId": "8c621753-2467-419c-8916-05b7f1d15d61",
+  "name": "",
+  "logFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\PDC_Project\\des_crypto"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:30:02",
+ "timestampMillis": "1770388202665",
+ "status": {
+  "cmdId": "8c621753-2467-419c-8916-05b7f1d15d61",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:30:03",
+ "timestampMillis": "1770388203384",
+ "status": {
+  "cmdId": "8c621753-2467-419c-8916-05b7f1d15d61",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:30:03",
+ "timestampMillis": "1770388203440",
+ "status": {
+  "cmdId": "e55c6f02-890d-4d9b-aeee-61b99a27371f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:30:03",
+ "timestampMillis": "1770388203440",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:30:03",
+ "timestampMillis": "1770388203440",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

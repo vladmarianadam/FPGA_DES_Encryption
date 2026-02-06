@@ -1,0 +1,75 @@
+========================================
+DES Implementation Testbench
+Target: Artix-7 xc7a100tcsg324-1
+========================================
+
+--- ENCRYPTION TESTS ---
+
+Test 1: Grabbe example
+  Key       : 0x133457799BBCDFF1
+  Plaintext : 0x0123456789ABCDEF
+  Expected  : 0x85E813540F0AB405
+  Got       : 0x85E813540F0AB405
+  PASS
+
+Test 2: Zero ciphertext test
+  Key       : 0x0E329232EA6D0D73
+  Plaintext : 0x8787878787878787
+  Expected  : 0x0000000000000000
+  Got       : 0x0000000000000000
+  PASS
+
+Test 3: Classic FIPS vector
+  Key       : 0xFEDCBA9876543210
+  Plaintext : 0x0123456789ABCDEF
+  Expected  : 0xED39D950FA74BCC4
+  Got       : 0xED39D950FA74BCC4
+  PASS
+
+Test 4: Classic test vector
+  Key       : 0xFEDCBA9876543210
+  Plaintext : 0x0123456789ABCDEF
+  Expected  : 0xED39D950FA74BCC4
+  Got       : 0xED39D950FA74BCC4
+  PASS
+
+--- DECRYPTION TESTS ---
+
+Test 1: Grabbe example
+  Key       : 0x133457799BBCDFF1
+  Ciphertext: 0x85E813540F0AB405
+  Expected  : 0x0123456789ABCDEF
+  Got       : 0x0123456789ABCDEF
+  PASS
+
+Test 2: Zero ciphertext test
+  Key       : 0x0E329232EA6D0D73
+  Ciphertext: 0x0000000000000000
+  Expected  : 0x8787878787878787
+  Got       : 0x8787878787878787
+  PASS
+
+Test 3: Classic FIPS vector
+  Key       : 0xFEDCBA9876543210
+  Ciphertext: 0xED39D950FA74BCC4
+  Expected  : 0x0123456789ABCDEF
+  Got       : 0x0123456789ABCDEF
+  PASS
+
+Test 4: Classic test vector
+  Key       : 0xFEDCBA9876543210
+  Ciphertext: 0xED39D950FA74BCC4
+  Expected  : 0x0123456789ABCDEF
+  Got       : 0x0123456789ABCDEF
+  PASS
+
+--- ROUND-TRIP TEST ---
+  Original  : 0xDEADBEEFCAFEBABE
+  Encrypted : 0x3D702272C7C1812B
+  Decrypted : 0xDEADBEEFCAFEBABE
+  Round-trip PASS
+
+========================================
+Results: 9/9 tests passed
+*** ALL TESTS PASSED ***
+========================================

@@ -1,0 +1,3 @@
+relativeroot=C:/02_work/PDC/PDC_Project/des_crypto
+original_argv=--mode hls --cosim --config C:\02_work\PDC\PDC_Project\des_crypto\hls_config.cfg --work_dir des_crypto 
+

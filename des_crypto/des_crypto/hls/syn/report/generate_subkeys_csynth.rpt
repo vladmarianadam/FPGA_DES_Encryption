@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vitis HLS Report for 'generate_subkeys'
+================================================================
+* Date:           Fri Feb  6 16:31:25 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        des_crypto
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|      0|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      270|  240|  126800|  63400|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|      0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++--------------+-----+-----+------------+------------------+--------------+
+|ap_ready      |  out|    1|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_0   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_1   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_2   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_3   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_4   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_5   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_6   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_7   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_8   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_9   |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_10  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_11  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_12  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_13  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_14  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_return_15  |  out|   48|  ap_ctrl_hs|  generate_subkeys|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  generate_subkeys|  return value|
+|key           |   in|   64|     ap_none|               key|        scalar|
++--------------+-----+-----+------------+------------------+--------------+
+

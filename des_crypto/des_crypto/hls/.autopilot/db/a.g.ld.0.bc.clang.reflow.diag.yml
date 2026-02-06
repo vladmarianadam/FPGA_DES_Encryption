@@ -1,0 +1,3403 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/02_work/PDC/PDC_Project/des_crypto/des_crypto/hls/.autopilot/db\des.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_des.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: 'C:/02_work/PDC/PDC_Project/des_crypto/des_crypto/hls/.autopilot/db\des.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_des.pp.0.cpp
+    DebugLoc:        { File: 'C:/02_work/PDC/PDC_Project/des_crypto/des_crypto/hls/.autopilot/db\des.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 164, Column: 13 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'left_rotate(ap_uint<28>, int)'
+    DebugLoc:        { File: ../des.cpp, Line: 124, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'generate_subkeys(ap_uint<64>, ap_uint<48>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 109, Column: 24 }
+Function:        _ZL7feistel7ap_uintILi32EES_ILi48EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'expand(ap_uint<32>)'
+    DebugLoc:        { File: ../des.cpp, Line: 40, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'feistel(ap_uint<32>, ap_uint<48>)'
+    DebugLoc:        { File: ../des.cpp, Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 118, Column: 23 }
+Function:        _ZL7feistel7ap_uintILi32EES_ILi48EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'permute_P(ap_uint<32>)'
+    DebugLoc:        { File: ../des.cpp, Line: 54, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'feistel(ap_uint<32>, ap_uint<48>)'
+    DebugLoc:        { File: ../des.cpp, Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 115, Column: 26 }
+Function:        _ZL7feistel7ap_uintILi32EES_ILi48EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sbox_substitute(ap_uint<48>)'
+    DebugLoc:        { File: ../des.cpp, Line: 68, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'feistel(ap_uint<32>, ap_uint<48>)'
+    DebugLoc:        { File: ../des.cpp, Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 189, Column: 24 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'apply_IP(ap_uint<64>)'
+    DebugLoc:        { File: ../des.cpp, Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 215, Column: 22 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'apply_FP(ap_uint<64>)'
+    DebugLoc:        { File: ../des.cpp, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: ../des.cpp, Line: 204, Column: 28 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'feistel(ap_uint<32>, ap_uint<48>)'
+    DebugLoc:        { File: ../des.cpp, Line: 105, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 232, Column: 5 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'generate_subkeys(ap_uint<64>, ap_uint<48>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 235, Column: 19 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        FP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:30:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        ROUNDS_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:196:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        P_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:58:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        SBOX_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:74:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        E_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:44:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        IP_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:14:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          des_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        KEYGEN_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:159:18'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC2_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:173:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '48'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+Function:        _ZL16generate_subkeys7ap_uintILi64EEPS_ILi48EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PC1_LOOP
+  - String:          ''' ('
+  - LoopLoc:         '../des.cpp:147:15'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          generate_subkeys
+  - String:          ''' completely with a factor of '
+  - Factor:          '56'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 232, Column: 5 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'generate_subkeys(ap_uint<64>, ap_uint<48>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 235, Column: 19 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_des_encrypt_ir
+Args:            
+  - Callee:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_des_encrypt_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../des.h, Line: 115, Column: 0 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL4SBOX
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 46 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Failure
+Pass:            reflow-array-partition
+Name:            WarnArrayXFORMOnIndexCast
+DebugLoc:        { File: ../des.cpp, Line: 93, Column: 56 }
+Function:        _ZL8des_core7ap_uintILi64EEPS_ILi48EEb
+Args:            
+  - String:          Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations.
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../des.cpp, Line: 230, Column: 13 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          subkeys
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 232, Column: 5 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'generate_subkeys(ap_uint<64>, ap_uint<48>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 141, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../des.cpp, Line: 235, Column: 19 }
+Function:        _Z11des_encrypt7ap_uintILi64EES0_PS0_
+Args:            
+  - Callee:          'des_core(ap_uint<64>, ap_uint<48>*, bool)'
+    DebugLoc:        { File: ../des.cpp, Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'des_encrypt(ap_uint<64>, ap_uint<64>, ap_uint<64>*)'
+    DebugLoc:        { File: ../des.cpp, Line: 223, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

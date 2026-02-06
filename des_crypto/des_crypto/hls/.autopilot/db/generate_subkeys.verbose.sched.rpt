@@ -1,0 +1,238 @@
+
+
+================================================================
+== Vitis HLS Report for 'generate_subkeys'
+================================================================
+* Date:           Fri Feb  6 16:31:22 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        des_crypto
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|      0 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%key_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %key" [../des.cpp:141]   --->   Operation 2 'read' 'key_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 7" [../des.cpp:151]   --->   Operation 3 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 15" [../des.cpp:151]   --->   Operation 4 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 23" [../des.cpp:151]   --->   Operation 5 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%tmp_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 31" [../des.cpp:151]   --->   Operation 6 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 39" [../des.cpp:151]   --->   Operation 7 'bitselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp_5 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 47" [../des.cpp:151]   --->   Operation 8 'bitselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 55" [../des.cpp:151]   --->   Operation 9 'bitselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 63" [../des.cpp:151]   --->   Operation 10 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 6" [../des.cpp:151]   --->   Operation 11 'bitselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 14" [../des.cpp:151]   --->   Operation 12 'bitselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 22" [../des.cpp:151]   --->   Operation 13 'bitselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 30" [../des.cpp:151]   --->   Operation 14 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%tmp_12 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 38" [../des.cpp:151]   --->   Operation 15 'bitselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 46" [../des.cpp:151]   --->   Operation 16 'bitselect' 'tmp_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 54" [../des.cpp:151]   --->   Operation 17 'bitselect' 'tmp_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_15 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 62" [../des.cpp:151]   --->   Operation 18 'bitselect' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_16 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 5" [../des.cpp:151]   --->   Operation 19 'bitselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_17 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 13" [../des.cpp:151]   --->   Operation 20 'bitselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_18 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 21" [../des.cpp:151]   --->   Operation 21 'bitselect' 'tmp_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_19 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 29" [../des.cpp:151]   --->   Operation 22 'bitselect' 'tmp_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_20 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 37" [../des.cpp:151]   --->   Operation 23 'bitselect' 'tmp_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_21 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 45" [../des.cpp:151]   --->   Operation 24 'bitselect' 'tmp_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_22 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 53" [../des.cpp:151]   --->   Operation 25 'bitselect' 'tmp_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_23 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 61" [../des.cpp:151]   --->   Operation 26 'bitselect' 'tmp_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_24 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 4" [../des.cpp:151]   --->   Operation 27 'bitselect' 'tmp_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_25 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 12" [../des.cpp:151]   --->   Operation 28 'bitselect' 'tmp_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_26 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 20" [../des.cpp:151]   --->   Operation 29 'bitselect' 'tmp_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_27 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 28" [../des.cpp:151]   --->   Operation 30 'bitselect' 'tmp_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_28 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 1" [../des.cpp:151]   --->   Operation 31 'bitselect' 'tmp_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_29 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 9" [../des.cpp:151]   --->   Operation 32 'bitselect' 'tmp_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_30 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 17" [../des.cpp:151]   --->   Operation 33 'bitselect' 'tmp_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_31 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 25" [../des.cpp:151]   --->   Operation 34 'bitselect' 'tmp_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_32 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 33" [../des.cpp:151]   --->   Operation 35 'bitselect' 'tmp_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_33 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 41" [../des.cpp:151]   --->   Operation 36 'bitselect' 'tmp_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_34 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 49" [../des.cpp:151]   --->   Operation 37 'bitselect' 'tmp_34' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_35 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 57" [../des.cpp:151]   --->   Operation 38 'bitselect' 'tmp_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_36 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 2" [../des.cpp:151]   --->   Operation 39 'bitselect' 'tmp_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%tmp_37 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 10" [../des.cpp:151]   --->   Operation 40 'bitselect' 'tmp_37' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_38 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 18" [../des.cpp:151]   --->   Operation 41 'bitselect' 'tmp_38' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_39 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 26" [../des.cpp:151]   --->   Operation 42 'bitselect' 'tmp_39' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_40 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 34" [../des.cpp:151]   --->   Operation 43 'bitselect' 'tmp_40' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%tmp_41 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 42" [../des.cpp:151]   --->   Operation 44 'bitselect' 'tmp_41' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%tmp_42 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 50" [../des.cpp:151]   --->   Operation 45 'bitselect' 'tmp_42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%tmp_43 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 58" [../des.cpp:151]   --->   Operation 46 'bitselect' 'tmp_43' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_44 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 3" [../des.cpp:151]   --->   Operation 47 'bitselect' 'tmp_44' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_45 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 11" [../des.cpp:151]   --->   Operation 48 'bitselect' 'tmp_45' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_46 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 19" [../des.cpp:151]   --->   Operation 49 'bitselect' 'tmp_46' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%tmp_47 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 27" [../des.cpp:151]   --->   Operation 50 'bitselect' 'tmp_47' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_48 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 35" [../des.cpp:151]   --->   Operation 51 'bitselect' 'tmp_48' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_49 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 43" [../des.cpp:151]   --->   Operation 52 'bitselect' 'tmp_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_50 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 51" [../des.cpp:151]   --->   Operation 53 'bitselect' 'tmp_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_51 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 59" [../des.cpp:151]   --->   Operation 54 'bitselect' 'tmp_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_52 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 36" [../des.cpp:151]   --->   Operation 55 'bitselect' 'tmp_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_53 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 44" [../des.cpp:151]   --->   Operation 56 'bitselect' 'tmp_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_54 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 52" [../des.cpp:151]   --->   Operation 57 'bitselect' 'tmp_54' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_100 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %key_read, i32 60" [../des.cpp:151]   --->   Operation 58 'bitselect' 'tmp_100' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 5, i32 6" [../des.cpp:177]   --->   Operation 59 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_55 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 39, i32 38" [../des.cpp:177]   --->   Operation 60 'partselect' 'tmp_55' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_56 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 51, i32 50" [../des.cpp:177]   --->   Operation 61 'partselect' 'tmp_56' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%subkey = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_14, i1 %tmp_17, i1 %tmp_11, i1 %tmp_24, i1 %tmp_1, i1 %tmp_5, i1 %tmp_3, i1 %tmp, i1 %tmp_15, i1 %tmp_6, i1 %tmp_21, i1 %tmp_10, i1 %tmp_23, i1 %tmp_19, i2 %tmp_55, i1 %tmp_26, i2 %tmp_s, i1 %tmp_7, i1 %tmp_27, i1 %tmp_20, i1 %tmp_13, i1 %tmp_2, i1 %tmp_41, i1 %tmp_52, i1 %tmp_31, i1 %tmp_37, i1 %tmp_47, i1 %tmp_100, i1 %tmp_30, i1 %tmp_40, i1 %tmp_51, i1 %tmp_45, i1 %tmp_33, i1 %tmp_48, i1 %tmp_44, i1 %tmp_49, i1 %tmp_39, i1 %tmp_28, i1 %tmp_34, i1 %tmp_53, i1 %tmp_46, i2 %tmp_56, i1 %tmp_36, i1 %tmp_29, i1 %tmp_32" [../des.cpp:177]   --->   Operation 62 'bitconcatenate' 'subkey' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%tmp_57 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 13, i32 14" [../des.cpp:177]   --->   Operation 63 'partselect' 'tmp_57' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_58 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 47, i32 46" [../des.cpp:177]   --->   Operation 64 'partselect' 'tmp_58' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_59 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 7, i32 6" [../des.cpp:177]   --->   Operation 65 'partselect' 'tmp_59' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_60 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 59, i32 58" [../des.cpp:177]   --->   Operation 66 'partselect' 'tmp_60' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%subkey_1 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_15, i1 %tmp_18, i1 %tmp_12, i1 %tmp_25, i1 %tmp_2, i1 %tmp_6, i1 %tmp_4, i1 %tmp_1, i1 %tmp_16, i1 %tmp_7, i1 %tmp_22, i1 %tmp_11, i1 %tmp_24, i1 %tmp_20, i2 %tmp_58, i1 %tmp_27, i2 %tmp_57, i2 %tmp_59, i1 %tmp_21, i1 %tmp_14, i1 %tmp_3, i1 %tmp_42, i1 %tmp_53, i1 %tmp_32, i1 %tmp_38, i1 %tmp_48, i1 %tmp_28, i1 %tmp_31, i1 %tmp_41, i1 %tmp_52, i1 %tmp_46, i1 %tmp_34, i1 %tmp_49, i1 %tmp_45, i1 %tmp_50, i1 %tmp_40, i1 %tmp_29, i1 %tmp_35, i1 %tmp_54, i1 %tmp_47, i2 %tmp_60, i1 %tmp_37, i1 %tmp_30, i1 %tmp_33" [../des.cpp:177]   --->   Operation 67 'bitconcatenate' 'subkey_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_61 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 29, i32 30" [../des.cpp:177]   --->   Operation 68 'partselect' 'tmp_61' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_62 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 63, i32 62" [../des.cpp:177]   --->   Operation 69 'partselect' 'tmp_62' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_63 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 23, i32 22" [../des.cpp:177]   --->   Operation 70 'partselect' 'tmp_63' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%subkey_2 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1, i1 %tmp_17, i1 %tmp_20, i1 %tmp_14, i1 %tmp_27, i1 %tmp_4, i1 %tmp_8, i1 %tmp_6, i1 %tmp_3, i1 %tmp_18, i1 %tmp_9, i1 %tmp_24, i1 %tmp_13, i1 %tmp_26, i1 %tmp_22, i2 %tmp_62, i1 %tmp_1, i2 %tmp_61, i2 %tmp_63, i1 %tmp_23, i1 %tmp_16, i1 %tmp_5, i1 %tmp_44, i1 %tmp_100, i1 %tmp_34, i1 %tmp_40, i1 %tmp_50, i1 %tmp_30, i1 %tmp_33, i1 %tmp_43, i1 %tmp_54, i1 %tmp_48, i1 %tmp_36, i1 %tmp_51, i1 %tmp_47, i1 %tmp_52, i1 %tmp_42, i1 %tmp_31, i1 %tmp_37, i1 %tmp_28, i1 %tmp_49, i1 %tmp_45, i1 %tmp_53, i1 %tmp_39, i1 %tmp_32, i1 %tmp_35" [../des.cpp:177]   --->   Operation 71 'bitconcatenate' 'subkey_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%tmp_64 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 45, i32 46" [../des.cpp:177]   --->   Operation 72 'partselect' 'tmp_64' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "%tmp_65 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 43, i32 44" [../des.cpp:177]   --->   Operation 73 'partselect' 'tmp_65' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_66 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 14, i32 13" [../des.cpp:177]   --->   Operation 74 'partselect' 'tmp_66' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%subkey_3 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1, i1 %tmp_19, i1 %tmp_22, i1 %tmp_16, i1 %tmp_1, i1 %tmp_6, i1 %tmp_10, i1 %tmp_8, i1 %tmp_5, i1 %tmp_20, i1 %tmp_11, i1 %tmp_26, i1 %tmp_15, i1 %tmp, i1 %tmp_24, i2 %tmp_66, i1 %tmp_3, i2 %tmp_64, i2 %tmp_55, i1 %tmp_25, i1 %tmp_18, i1 %tmp_7, i1 %tmp_46, i1 %tmp_29, i1 %tmp_36, i1 %tmp_42, i1 %tmp_52, i1 %tmp_32, i1 %tmp_35, i1 %tmp_45, i1 %tmp_28, i1 %tmp_50, i1 %tmp_38, i2 %tmp_65, i1 %tmp_54, i1 %tmp_44, i1 %tmp_33, i1 %tmp_39, i1 %tmp_30, i1 %tmp_51, i1 %tmp_47, i1 %tmp_100, i1 %tmp_41, i1 %tmp_34, i1 %tmp_37" [../des.cpp:177]   --->   Operation 75 'bitconcatenate' 'subkey_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_67 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 61, i32 62" [../des.cpp:177]   --->   Operation 76 'partselect' 'tmp_67' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%tmp_68 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 59, i32 60" [../des.cpp:177]   --->   Operation 77 'partselect' 'tmp_68' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%tmp_69 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 30, i32 29" [../des.cpp:177]   --->   Operation 78 'partselect' 'tmp_69' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_70 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 55, i32 54" [../des.cpp:177]   --->   Operation 79 'partselect' 'tmp_70' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%subkey_4 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1, i1 %tmp_21, i1 %tmp_24, i1 %tmp_18, i1 %tmp_3, i1 %tmp_8, i1 %tmp_12, i1 %tmp_10, i1 %tmp_7, i1 %tmp_22, i1 %tmp_13, i1 %tmp, i1 %tmp_17, i1 %tmp_2, i1 %tmp_26, i2 %tmp_69, i1 %tmp_5, i2 %tmp_67, i2 %tmp_70, i1 %tmp_27, i1 %tmp_20, i1 %tmp_9, i1 %tmp_48, i1 %tmp_31, i1 %tmp_38, i1 %tmp_44, i1 %tmp_54, i1 %tmp_34, i1 %tmp_37, i1 %tmp_47, i1 %tmp_30, i1 %tmp_52, i1 %tmp_40, i2 %tmp_68, i1 %tmp_28, i1 %tmp_46, i1 %tmp_35, i1 %tmp_41, i1 %tmp_32, i2 %tmp_65, i1 %tmp_29, i1 %tmp_43, i1 %tmp_36, i1 %tmp_39" [../des.cpp:177]   --->   Operation 80 'bitconcatenate' 'subkey_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_71 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 2, i32 1" [../des.cpp:177]   --->   Operation 81 'partselect' 'tmp_71' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_72 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 12, i32 13" [../des.cpp:177]   --->   Operation 82 'partselect' 'tmp_72' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_73 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 46, i32 45" [../des.cpp:177]   --->   Operation 83 'partselect' 'tmp_73' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_74 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 6, i32 5" [../des.cpp:177]   --->   Operation 84 'partselect' 'tmp_74' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%subkey_5 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1, i1 %tmp_23, i1 %tmp_26, i1 %tmp_20, i1 %tmp_5, i1 %tmp_10, i1 %tmp_14, i1 %tmp_12, i1 %tmp_9, i1 %tmp_24, i1 %tmp_15, i1 %tmp_2, i1 %tmp_19, i1 %tmp_4, i1 %tmp, i2 %tmp_73, i1 %tmp_7, i2 %tmp_72, i2 %tmp_74, i1 %tmp_1, i1 %tmp_22, i1 %tmp_11, i1 %tmp_50, i1 %tmp_33, i1 %tmp_40, i1 %tmp_46, i2 %tmp_71, i1 %tmp_39, i1 %tmp_49, i1 %tmp_32, i1 %tmp_54, i1 %tmp_42, i1 %tmp_29, i1 %tmp_53, i1 %tmp_30, i1 %tmp_48, i1 %tmp_37, i1 %tmp_43, i1 %tmp_34, i2 %tmp_68, i1 %tmp_31, i1 %tmp_45, i1 %tmp_38, i1 %tmp_41" [../des.cpp:177]   --->   Operation 85 'bitconcatenate' 'subkey_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%tmp_75 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 18, i32 17" [../des.cpp:177]   --->   Operation 86 'partselect' 'tmp_75' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_76 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 28, i32 29" [../des.cpp:177]   --->   Operation 87 'partselect' 'tmp_76' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 88 [1/1] (0.00ns)   --->   "%tmp_77 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 62, i32 61" [../des.cpp:177]   --->   Operation 88 'partselect' 'tmp_77' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_78 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 22, i32 21" [../des.cpp:177]   --->   Operation 89 'partselect' 'tmp_78' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%subkey_6 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1, i1 %tmp_25, i1 %tmp, i1 %tmp_22, i1 %tmp_7, i1 %tmp_12, i1 %tmp_16, i1 %tmp_14, i1 %tmp_11, i1 %tmp_26, i1 %tmp_17, i1 %tmp_4, i1 %tmp_21, i1 %tmp_6, i1 %tmp_2, i2 %tmp_77, i1 %tmp_9, i2 %tmp_76, i2 %tmp_78, i1 %tmp_3, i1 %tmp_24, i1 %tmp_13, i1 %tmp_52, i1 %tmp_35, i1 %tmp_42, i1 %tmp_48, i2 %tmp_75, i1 %tmp_41, i1 %tmp_51, i1 %tmp_34, i1 %tmp_28, i1 %tmp_44, i1 %tmp_31, i1 %tmp_100, i1 %tmp_32, i1 %tmp_50, i1 %tmp_39, i1 %tmp_45, i1 %tmp_36, i1 %tmp_29, i1 %tmp_53, i1 %tmp_33, i1 %tmp_47, i1 %tmp_40, i1 %tmp_43" [../des.cpp:177]   --->   Operation 90 'bitconcatenate' 'subkey_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_79 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 34, i32 33" [../des.cpp:177]   --->   Operation 91 'partselect' 'tmp_79' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%tmp_80 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 13, i32 12" [../des.cpp:177]   --->   Operation 92 'partselect' 'tmp_80' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_81 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 38, i32 37" [../des.cpp:177]   --->   Operation 93 'partselect' 'tmp_81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%subkey_7 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1, i1 %tmp_27, i1 %tmp_2, i1 %tmp_24, i1 %tmp_9, i1 %tmp_14, i1 %tmp_18, i1 %tmp_16, i1 %tmp_13, i1 %tmp, i1 %tmp_19, i1 %tmp_6, i1 %tmp_23, i1 %tmp_8, i1 %tmp_4, i2 %tmp_80, i1 %tmp_11, i1 %tmp_21, i1 %tmp_1, i2 %tmp_81, i1 %tmp_5, i1 %tmp_26, i1 %tmp_15, i1 %tmp_54, i1 %tmp_37, i1 %tmp_44, i1 %tmp_50, i2 %tmp_79, i1 %tmp_43, i1 %tmp_53, i1 %tmp_36, i1 %tmp_30, i1 %tmp_46, i1 %tmp_33, i1 %tmp_29, i1 %tmp_34, i1 %tmp_52, i1 %tmp_41, i1 %tmp_47, i1 %tmp_38, i1 %tmp_31, i1 %tmp_100, i1 %tmp_35, i1 %tmp_49, i1 %tmp_42, i1 %tmp_45" [../des.cpp:177]   --->   Operation 94 'bitconcatenate' 'subkey_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_82 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 42, i32 41" [../des.cpp:177]   --->   Operation 95 'partselect' 'tmp_82' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%tmp_83 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 21, i32 20" [../des.cpp:177]   --->   Operation 96 'partselect' 'tmp_83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%subkey_8 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp, i1 %tmp_3, i1 %tmp_25, i1 %tmp_10, i1 %tmp_15, i1 %tmp_19, i1 %tmp_17, i1 %tmp_14, i1 %tmp_1, i1 %tmp_20, i1 %tmp_7, i1 %tmp_24, i1 %tmp_9, i1 %tmp_5, i2 %tmp_83, i1 %tmp_12, i1 %tmp_22, i1 %tmp_2, i2 %tmp_73, i1 %tmp_6, i1 %tmp_27, i1 %tmp_16, i1 %tmp_100, i1 %tmp_38, i1 %tmp_45, i1 %tmp_51, i2 %tmp_82, i1 %tmp_44, i1 %tmp_54, i1 %tmp_37, i1 %tmp_31, i1 %tmp_47, i1 %tmp_34, i1 %tmp_30, i1 %tmp_35, i1 %tmp_53, i1 %tmp_42, i1 %tmp_48, i1 %tmp_39, i1 %tmp_32, i2 %tmp_71, i1 %tmp_50, i1 %tmp_43, i1 %tmp_46" [../des.cpp:177]   --->   Operation 97 'bitconcatenate' 'subkey_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%tmp_84 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 58, i32 57" [../des.cpp:177]   --->   Operation 98 'partselect' 'tmp_84' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%subkey_9 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_2, i1 %tmp_5, i1 %tmp_27, i1 %tmp_12, i1 %tmp_17, i1 %tmp_21, i1 %tmp_19, i1 %tmp_16, i1 %tmp_3, i1 %tmp_22, i1 %tmp_9, i1 %tmp_26, i1 %tmp_11, i1 %tmp_7, i1 %tmp, i1 %tmp_20, i1 %tmp_14, i1 %tmp_24, i1 %tmp_4, i2 %tmp_77, i1 %tmp_8, i1 %tmp_1, i1 %tmp_18, i1 %tmp_29, i1 %tmp_40, i1 %tmp_47, i1 %tmp_53, i2 %tmp_84, i1 %tmp_46, i1 %tmp_28, i1 %tmp_39, i1 %tmp_33, i1 %tmp_49, i1 %tmp_36, i1 %tmp_32, i1 %tmp_37, i1 %tmp_100, i1 %tmp_44, i1 %tmp_50, i1 %tmp_41, i1 %tmp_34, i2 %tmp_75, i1 %tmp_52, i1 %tmp_45, i1 %tmp_48" [../des.cpp:177]   --->   Operation 99 'bitconcatenate' 'subkey_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%tmp_85 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 11, i32 10" [../des.cpp:177]   --->   Operation 100 'partselect' 'tmp_85' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%subkey_10 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_4, i1 %tmp_7, i1 %tmp_1, i1 %tmp_14, i1 %tmp_19, i1 %tmp_23, i1 %tmp_21, i1 %tmp_18, i1 %tmp_5, i1 %tmp_24, i1 %tmp_11, i1 %tmp, i1 %tmp_13, i1 %tmp_9, i1 %tmp_2, i1 %tmp_22, i1 %tmp_16, i1 %tmp_26, i1 %tmp_6, i2 %tmp_80, i1 %tmp_10, i1 %tmp_3, i1 %tmp_20, i1 %tmp_31, i1 %tmp_42, i1 %tmp_49, i1 %tmp_100, i2 %tmp_85, i1 %tmp_48, i1 %tmp_30, i1 %tmp_41, i1 %tmp_35, i1 %tmp_51, i1 %tmp_38, i1 %tmp_34, i1 %tmp_39, i1 %tmp_29, i1 %tmp_46, i1 %tmp_52, i1 %tmp_43, i1 %tmp_36, i2 %tmp_79, i1 %tmp_54, i1 %tmp_47, i1 %tmp_50" [../des.cpp:177]   --->   Operation 101 'bitconcatenate' 'subkey_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%tmp_86 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 50, i32 49" [../des.cpp:177]   --->   Operation 102 'partselect' 'tmp_86' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "%tmp_87 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 6, i32 7" [../des.cpp:177]   --->   Operation 103 'partselect' 'tmp_87' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_88 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 29, i32 28" [../des.cpp:177]   --->   Operation 104 'partselect' 'tmp_88' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_89 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 27, i32 26" [../des.cpp:177]   --->   Operation 105 'partselect' 'tmp_89' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 106 [1/1] (0.00ns)   --->   "%subkey_11 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i2.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_6, i1 %tmp_9, i1 %tmp_3, i1 %tmp_16, i1 %tmp_21, i1 %tmp_25, i1 %tmp_23, i1 %tmp_20, i1 %tmp_7, i1 %tmp_26, i1 %tmp_13, i1 %tmp_2, i1 %tmp_15, i1 %tmp_11, i1 %tmp_4, i1 %tmp_24, i1 %tmp_18, i2 %tmp_87, i2 %tmp_88, i1 %tmp_12, i1 %tmp_5, i1 %tmp_22, i1 %tmp_33, i1 %tmp_44, i1 %tmp_51, i1 %tmp_29, i2 %tmp_89, i1 %tmp_50, i1 %tmp_32, i1 %tmp_43, i1 %tmp_37, i1 %tmp_53, i1 %tmp_40, i1 %tmp_36, i1 %tmp_41, i1 %tmp_31, i1 %tmp_48, i1 %tmp_54, i1 %tmp_45, i1 %tmp_38, i2 %tmp_86, i1 %tmp_28, i1 %tmp_49, i1 %tmp_52" [../des.cpp:177]   --->   Operation 106 'bitconcatenate' 'subkey_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_90 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 3, i32 2" [../des.cpp:177]   --->   Operation 107 'partselect' 'tmp_90' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 108 [1/1] (0.00ns)   --->   "%tmp_91 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 22, i32 23" [../des.cpp:177]   --->   Operation 108 'partselect' 'tmp_91' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_92 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 43, i32 42" [../des.cpp:177]   --->   Operation 109 'partselect' 'tmp_92' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 110 [1/1] (0.00ns)   --->   "%subkey_12 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_8, i1 %tmp_11, i1 %tmp_5, i1 %tmp_18, i1 %tmp_23, i1 %tmp_27, i1 %tmp_25, i1 %tmp_22, i1 %tmp_9, i1 %tmp, i1 %tmp_15, i1 %tmp_4, i1 %tmp_17, i1 %tmp_13, i1 %tmp_6, i1 %tmp_26, i1 %tmp_20, i2 %tmp_91, i1 %tmp_1, i1 %tmp_21, i1 %tmp_14, i1 %tmp_7, i1 %tmp_24, i1 %tmp_35, i1 %tmp_46, i1 %tmp_53, i1 %tmp_31, i2 %tmp_92, i1 %tmp_52, i1 %tmp_34, i1 %tmp_45, i1 %tmp_39, i1 %tmp_100, i1 %tmp_42, i1 %tmp_38, i1 %tmp_43, i1 %tmp_33, i1 %tmp_50, i1 %tmp_28, i1 %tmp_47, i1 %tmp_40, i2 %tmp_90, i1 %tmp_30, i1 %tmp_51, i1 %tmp_54" [../des.cpp:177]   --->   Operation 110 'bitconcatenate' 'subkey_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_93 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 38, i32 39" [../des.cpp:177]   --->   Operation 111 'partselect' 'tmp_93' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 112 [1/1] (0.00ns)   --->   "%tmp_94 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 19, i32 18" [../des.cpp:177]   --->   Operation 112 'partselect' 'tmp_94' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 113 [1/1] (0.00ns)   --->   "%subkey_13 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_10, i1 %tmp_13, i1 %tmp_7, i1 %tmp_20, i1 %tmp_25, i1 %tmp_1, i1 %tmp_27, i1 %tmp_24, i1 %tmp_11, i1 %tmp_2, i1 %tmp_17, i1 %tmp_6, i1 %tmp_19, i1 %tmp_15, i2 %tmp_59, i1 %tmp_22, i2 %tmp_93, i1 %tmp_3, i1 %tmp_23, i1 %tmp_16, i1 %tmp_9, i1 %tmp_26, i1 %tmp_37, i1 %tmp_48, i1 %tmp_100, i1 %tmp_33, i2 %tmp_60, i1 %tmp_54, i1 %tmp_36, i1 %tmp_47, i1 %tmp_41, i1 %tmp_29, i1 %tmp_44, i1 %tmp_40, i1 %tmp_45, i1 %tmp_35, i1 %tmp_52, i1 %tmp_30, i1 %tmp_49, i1 %tmp_42, i2 %tmp_94, i1 %tmp_32, i1 %tmp_53, i1 %tmp_28" [../des.cpp:177]   --->   Operation 113 'bitconcatenate' 'subkey_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 114 [1/1] (0.00ns)   --->   "%tmp_95 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 54, i32 55" [../des.cpp:177]   --->   Operation 114 'partselect' 'tmp_95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 115 [1/1] (0.00ns)   --->   "%tmp_96 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 35, i32 34" [../des.cpp:177]   --->   Operation 115 'partselect' 'tmp_96' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 116 [1/1] (0.00ns)   --->   "%subkey_14 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_12, i1 %tmp_15, i1 %tmp_9, i1 %tmp_22, i1 %tmp_27, i1 %tmp_3, i1 %tmp_1, i1 %tmp_26, i1 %tmp_13, i1 %tmp_4, i1 %tmp_19, i1 %tmp_8, i1 %tmp_21, i1 %tmp_17, i2 %tmp_63, i1 %tmp_24, i2 %tmp_95, i1 %tmp_5, i1 %tmp_25, i1 %tmp_18, i1 %tmp_11, i1 %tmp, i1 %tmp_39, i1 %tmp_50, i1 %tmp_29, i1 %tmp_35, i1 %tmp_45, i1 %tmp_53, i1 %tmp_28, i1 %tmp_38, i1 %tmp_49, i1 %tmp_43, i1 %tmp_31, i1 %tmp_46, i1 %tmp_42, i1 %tmp_47, i1 %tmp_37, i1 %tmp_54, i1 %tmp_32, i1 %tmp_51, i1 %tmp_44, i2 %tmp_96, i1 %tmp_34, i1 %tmp_100, i1 %tmp_30" [../des.cpp:177]   --->   Operation 116 'bitconcatenate' 'subkey_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 117 [1/1] (0.00ns)   --->   "%tmp_97 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 62, i32 63" [../des.cpp:177]   --->   Operation 117 'partselect' 'tmp_97' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%tmp_98 = partselect i2 @_ssdm_op_PartSelect.i2.i64.i32.i32, i64 %key_read, i32 31, i32 30" [../des.cpp:177]   --->   Operation 118 'partselect' 'tmp_98' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 119 [1/1] (0.00ns)   --->   "%subkey_15 = bitconcatenate i48 @_ssdm_op_BitConcatenate.i48.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i2.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i1.i2.i1.i1.i1, i1 %tmp_13, i1 %tmp_16, i1 %tmp_10, i1 %tmp_23, i1 %tmp, i1 %tmp_4, i1 %tmp_2, i1 %tmp_27, i1 %tmp_14, i1 %tmp_5, i1 %tmp_20, i1 %tmp_9, i1 %tmp_22, i1 %tmp_18, i2 %tmp_98, i1 %tmp_25, i2 %tmp_97, i1 %tmp_6, i1 %tmp_26, i1 %tmp_19, i1 %tmp_12, i1 %tmp_1, i1 %tmp_40, i1 %tmp_51, i1 %tmp_30, i1 %tmp_36, i1 %tmp_46, i1 %tmp_54, i1 %tmp_29, i1 %tmp_39, i1 %tmp_50, i1 %tmp_44, i1 %tmp_32, i1 %tmp_47, i1 %tmp_43, i1 %tmp_48, i1 %tmp_38, i1 %tmp_100, i1 %tmp_33, i1 %tmp_52, i1 %tmp_45, i2 %tmp_92, i1 %tmp_35, i1 %tmp_28, i1 %tmp_31" [../des.cpp:177]   --->   Operation 119 'bitconcatenate' 'subkey_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 120 [1/1] (0.00ns)   --->   "%mrv = insertvalue i768 <undef>, i48 %subkey" [../des.cpp:181]   --->   Operation 120 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 121 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i768 %mrv, i48 %subkey_1" [../des.cpp:181]   --->   Operation 121 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 122 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue i768 %mrv_1, i48 %subkey_2" [../des.cpp:181]   --->   Operation 122 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 123 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue i768 %mrv_2, i48 %subkey_3" [../des.cpp:181]   --->   Operation 123 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 124 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue i768 %mrv_3, i48 %subkey_4" [../des.cpp:181]   --->   Operation 124 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 125 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue i768 %mrv_4, i48 %subkey_5" [../des.cpp:181]   --->   Operation 125 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 126 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue i768 %mrv_5, i48 %subkey_6" [../des.cpp:181]   --->   Operation 126 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 127 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue i768 %mrv_6, i48 %subkey_7" [../des.cpp:181]   --->   Operation 127 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 128 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue i768 %mrv_7, i48 %subkey_8" [../des.cpp:181]   --->   Operation 128 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 129 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue i768 %mrv_8, i48 %subkey_9" [../des.cpp:181]   --->   Operation 129 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 130 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue i768 %mrv_9, i48 %subkey_10" [../des.cpp:181]   --->   Operation 130 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 131 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue i768 %mrv_s, i48 %subkey_11" [../des.cpp:181]   --->   Operation 131 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 132 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue i768 %mrv_10, i48 %subkey_12" [../des.cpp:181]   --->   Operation 132 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 133 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue i768 %mrv_11, i48 %subkey_13" [../des.cpp:181]   --->   Operation 133 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 134 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue i768 %mrv_12, i48 %subkey_14" [../des.cpp:181]   --->   Operation 134 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 135 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue i768 %mrv_13, i48 %subkey_15" [../des.cpp:181]   --->   Operation 135 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 136 [1/1] (0.00ns)   --->   "%ret_ln181 = ret i768 %mrv_14" [../des.cpp:181]   --->   Operation 136 'ret' 'ret_ln181' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

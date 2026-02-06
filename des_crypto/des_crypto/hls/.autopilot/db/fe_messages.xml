@@ -1,0 +1,154 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="apply_IP" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:15:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="apply_IP" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="apply_FP" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:31:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="apply_FP" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:41:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="expand" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:45:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="expand" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:55:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="permute_P" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:59:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="permute_P" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:69:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sbox_substitute" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:70:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sbox_substitute" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=SBOX complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:75:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sbox_substitute" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:106:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="feistel" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:125:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="left_rotate" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:142:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="generate_subkeys" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:143:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="generate_subkeys" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=subkeys complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:148:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="generate_subkeys" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:160:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="generate_subkeys" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:174:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="generate_subkeys" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:185:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:186:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=subkeys complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:197:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=des_encrypt" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:224:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:225:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_none port=plaintext" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:226:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_none port=key" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:227:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_vld port=ciphertext" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:231:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_encrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=subkeys complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:242:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_decrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:243:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_decrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_none port=ciphertext" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:244:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_decrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_none port=key" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:245:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_decrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_vld port=plaintext" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../des.cpp:249:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="des_decrypt" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=subkeys complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:164:13" msg_body="Inlining function 'left_rotate(ap_uint&lt;28&gt;, int)' into 'generate_subkeys(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*)'">
+        <args Callee="left_rotate(ap_uint&lt;28&gt;, int)" Callee-DebugLoc="File ../des.cpp Line 124 Column 0" Caller="generate_subkeys(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*)" Caller-DebugLoc="File ../des.cpp Line 141 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:109:24" msg_body="Inlining function 'expand(ap_uint&lt;32&gt;)' into 'feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)'">
+        <args Callee="expand(ap_uint&lt;32&gt;)" Callee-DebugLoc="File ../des.cpp Line 40 Column 0" Caller="feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)" Caller-DebugLoc="File ../des.cpp Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:118:23" msg_body="Inlining function 'permute_P(ap_uint&lt;32&gt;)' into 'feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)'">
+        <args Callee="permute_P(ap_uint&lt;32&gt;)" Callee-DebugLoc="File ../des.cpp Line 54 Column 0" Caller="feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)" Caller-DebugLoc="File ../des.cpp Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:115:26" msg_body="Inlining function 'sbox_substitute(ap_uint&lt;48&gt;)' into 'feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)'">
+        <args Callee="sbox_substitute(ap_uint&lt;48&gt;)" Callee-DebugLoc="File ../des.cpp Line 68 Column 0" Caller="feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)" Caller-DebugLoc="File ../des.cpp Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:189:24" msg_body="Inlining function 'apply_IP(ap_uint&lt;64&gt;)' into 'des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)'">
+        <args Callee="apply_IP(ap_uint&lt;64&gt;)" Callee-DebugLoc="File ../des.cpp Line 10 Column 0" Caller="des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)" Caller-DebugLoc="File ../des.cpp Line 184 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:215:22" msg_body="Inlining function 'apply_FP(ap_uint&lt;64&gt;)' into 'des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)'">
+        <args Callee="apply_FP(ap_uint&lt;64&gt;)" Callee-DebugLoc="File ../des.cpp Line 26 Column 0" Caller="des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)" Caller-DebugLoc="File ../des.cpp Line 184 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../des.cpp:204:28" msg_body="Inlining function 'feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)' into 'des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)'">
+        <args Callee="feistel(ap_uint&lt;32&gt;, ap_uint&lt;48&gt;)" Callee-DebugLoc="File ../des.cpp Line 105 Column 0" Caller="des_core(ap_uint&lt;64&gt;, ap_uint&lt;48&gt;*, bool)" Caller-DebugLoc="File ../des.cpp Line 184 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'FP_LOOP' (../des.cpp:30:14) in function 'des_core' completely with a factor of 64">
+        <args Factor="64" LoopLoc="../des.cpp:30:14" LoopName="FP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'ROUNDS_LOOP' (../des.cpp:196:18) in function 'des_core' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../des.cpp:196:18" LoopName="ROUNDS_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'P_LOOP' (../des.cpp:58:13) in function 'des_core' completely with a factor of 32">
+        <args Factor="32" LoopLoc="../des.cpp:58:13" LoopName="P_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'SBOX_LOOP' (../des.cpp:74:16) in function 'des_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../des.cpp:74:16" LoopName="SBOX_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'E_LOOP' (../des.cpp:44:13) in function 'des_core' completely with a factor of 48">
+        <args Factor="48" LoopLoc="../des.cpp:44:13" LoopName="E_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:184:0" msg_body="Unrolling loop 'IP_LOOP' (../des.cpp:14:14) in function 'des_core' completely with a factor of 64">
+        <args Factor="64" LoopLoc="../des.cpp:14:14" LoopName="IP_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:141:0" msg_body="Unrolling loop 'KEYGEN_LOOP' (../des.cpp:159:18) in function 'generate_subkeys' completely with a factor of 16">
+        <args Factor="16" LoopLoc="../des.cpp:159:18" LoopName="KEYGEN_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:141:0" msg_body="Unrolling loop 'PC2_LOOP' (../des.cpp:173:19) in function 'generate_subkeys' completely with a factor of 48">
+        <args Factor="48" LoopLoc="../des.cpp:173:19" LoopName="PC2_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../des.cpp:141:0" msg_body="Unrolling loop 'PC1_LOOP' (../des.cpp:147:15) in function 'generate_subkeys' completely with a factor of 56">
+        <args Factor="56" LoopLoc="../des.cpp:147:15" LoopName="PC1_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../des.h:115:0" msg_body="Applying array_partition to '_ZL4SBOX': Complete partitioning on dimension 1. Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 1 2 3" Mode="islist Complete Complete Complete" UOName="_ZL4SBOX"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="../des.cpp:93:46" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="../des.cpp:93:56" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../des.cpp:230:13" msg_body="Applying array_partition to 'subkeys': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="subkeys"/>
+    </msg>
+</xilinx:hls_fe_msgs>

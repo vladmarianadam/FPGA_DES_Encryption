@@ -1,0 +1,7 @@
+Running: xsim.dir/des_encrypt/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=des_encrypt_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb des_encrypt.wdb -simrunnum 0 -socket 58813
+Design successfully loaded
+Design Loading Memory Usage: 24524 KB (Peak: 24524 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 40752 KB (Peak: 40752 KB)
+Simulation CPU Usage: 62 ms

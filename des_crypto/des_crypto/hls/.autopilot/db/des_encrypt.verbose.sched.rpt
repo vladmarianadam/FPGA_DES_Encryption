@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'des_encrypt'
+================================================================
+* Date:           Fri Feb  6 16:31:25 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        des_crypto
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a100t-csg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.724 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       16|       16|  0.160 us|  0.160 us|   17|   17|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.72>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%key_read = read i64 @_ssdm_op_Read.ap_none.i64, i64 %key" [../des.cpp:223]   --->   Operation 3 'read' 'key_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%plaintext_read = read i64 @_ssdm_op_Read.ap_none.i64, i64 %plaintext" [../des.cpp:223]   --->   Operation 4 'read' 'plaintext_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%call_ret = call i768 @generate_subkeys, i64 %key_read" [../des.cpp:232]   --->   Operation 5 'call' 'call_ret' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%subkeys = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 6 'extractvalue' 'subkeys' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%subkeys_1 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 7 'extractvalue' 'subkeys_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%subkeys_2 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 8 'extractvalue' 'subkeys_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%subkeys_3 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 9 'extractvalue' 'subkeys_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%subkeys_4 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 10 'extractvalue' 'subkeys_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%subkeys_5 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 11 'extractvalue' 'subkeys_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%subkeys_6 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 12 'extractvalue' 'subkeys_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%subkeys_7 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 13 'extractvalue' 'subkeys_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%subkeys_8 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 14 'extractvalue' 'subkeys_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%subkeys_9 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 15 'extractvalue' 'subkeys_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%subkeys_10 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 16 'extractvalue' 'subkeys_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%subkeys_11 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 17 'extractvalue' 'subkeys_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%subkeys_12 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 18 'extractvalue' 'subkeys_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%subkeys_13 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 19 'extractvalue' 'subkeys_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%subkeys_14 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 20 'extractvalue' 'subkeys_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%subkeys_15 = extractvalue i768 %call_ret" [../des.cpp:232]   --->   Operation 21 'extractvalue' 'subkeys_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (5.72ns)   --->   "%ref_tmp = call i64 @des_core, i64 %plaintext_read, i48 %subkeys, i48 %subkeys_1, i48 %subkeys_2, i48 %subkeys_3, i48 %subkeys_4, i48 %subkeys_5, i48 %subkeys_6, i48 %subkeys_7, i48 %subkeys_8, i48 %subkeys_9, i48 %subkeys_10, i48 %subkeys_11, i48 %subkeys_12, i48 %subkeys_13, i48 %subkeys_14, i48 %subkeys_15" [../des.cpp:235]   --->   Operation 22 'call' 'ref_tmp' <Predicate = true> <Delay = 5.72> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 6.72>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%spectopmodule_ln223 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [../des.cpp:223]   --->   Operation 23 'spectopmodule' 'spectopmodule_ln223' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln223 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0" [../des.cpp:223]   --->   Operation 24 'specinterface' 'specinterface_ln223' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %plaintext"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %plaintext, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %key"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %key, void @empty, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %ciphertext"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %ciphertext, void @empty_1, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/2] (6.72ns)   --->   "%ref_tmp = call i64 @des_core, i64 %plaintext_read, i48 %subkeys, i48 %subkeys_1, i48 %subkeys_2, i48 %subkeys_3, i48 %subkeys_4, i48 %subkeys_5, i48 %subkeys_6, i48 %subkeys_7, i48 %subkeys_8, i48 %subkeys_9, i48 %subkeys_10, i48 %subkeys_11, i48 %subkeys_12, i48 %subkeys_13, i48 %subkeys_14, i48 %subkeys_15" [../des.cpp:235]   --->   Operation 31 'call' 'ref_tmp' <Predicate = true> <Delay = 6.72> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%write_ln235 = write void @_ssdm_op_Write.ap_vld.i64P0A, i64 %ciphertext, i64 %ref_tmp" [../des.cpp:235]   --->   Operation 32 'write' 'write_ln235' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln236 = ret" [../des.cpp:236]   --->   Operation 33 'ret' 'ret_ln236' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.729ns
+The critical path consists of the following:
+	wire read operation ('key_read', ../des.cpp:223) on port 'key' (../des.cpp:223) [12]  (0.000 ns)
+	'call' operation 768 bit ('call_ret', ../des.cpp:232) to 'generate_subkeys' [14]  (0.000 ns)
+	'call' operation 64 bit ('ref_tmp', ../des.cpp:235) to 'des_core' [31]  (5.729 ns)
+
+ <State 2>: 6.724ns
+The critical path consists of the following:
+	'call' operation 64 bit ('ref_tmp', ../des.cpp:235) to 'des_core' [31]  (6.724 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\des_crypto.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/06/26 16:32:11",
+ "timestampMillis": "1770388331955",
+ "buildStep": {
+  "cmdId": "ac732eb4-8c27-4e70-b722-843a1d9e4654",
+  "name": "vitis-run",
+  "logFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\logs\\des_crypto.steps.log",
+  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\02_work\\PDC\\PDC_Project\\des_crypto\\hls_config.cfg --work_dir des_crypto ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\02_work\\PDC\\PDC_Project\\des_crypto\\hls_config.cfg",
+   "--work_dir",
+   "des_crypto"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\PDC_Project\\des_crypto"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:32:11",
+ "timestampMillis": "1770388331956",
+ "status": {
+  "cmdId": "ac732eb4-8c27-4e70-b722-843a1d9e4654",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334651",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "des_encrypt",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/02_work\\PDC\\PDC_Project\\des.cpp",
+     "C:/02_work\\PDC\\PDC_Project\\des.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334652",
+ "buildStep": {
+  "cmdId": "116b8d4b-d429-41b1-ad5e-8d6406abd2b6",
+  "name": "",
+  "logFile": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\02_work\\PDC\\PDC_Project\\des_crypto"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334652",
+ "status": {
+  "cmdId": "116b8d4b-d429-41b1-ad5e-8d6406abd2b6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334652",
+ "report": {
+  "path": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls\\sim\\report\\des_encrypt_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334653",
+ "report": {
+  "path": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334653",
+ "report": {
+  "path": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334653",
+ "report": {
+  "path": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:14",
+ "timestampMillis": "1770388334654",
+ "report": {
+  "path": "C:/02_work\\PDC\\PDC_Project\\des_crypto\\des_crypto\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:32:50",
+ "timestampMillis": "1770388370383",
+ "status": {
+  "cmdId": "116b8d4b-d429-41b1-ad5e-8d6406abd2b6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/06/26 16:32:50",
+ "timestampMillis": "1770388370437",
+ "status": {
+  "cmdId": "ac732eb4-8c27-4e70-b722-843a1d9e4654",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:50",
+ "timestampMillis": "1770388370438",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/06/26 16:32:50",
+ "timestampMillis": "1770388370438",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
